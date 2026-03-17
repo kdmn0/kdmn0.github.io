@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const themeToggle = document.getElementById('theme-toggle');
+    const themeToggle = document.getElementById('dark-mode-btn');
     const htmlElement = document.documentElement;
     const bodyElement = document.body;
     
