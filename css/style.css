@@ -19,7 +19,7 @@ body.light-mode {
 
 body.light-mode .navbar {
     background-color: #ffffff !important;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid #8d8b8b;
 }
 
 body.light-mode .navbar-dark .navbar-nav .nav-link {
@@ -27,7 +27,16 @@ body.light-mode .navbar-dark .navbar-nav .nav-link {
 }
 
 body.light-mode .navbar-dark .navbar-nav .nav-link:hover {
+    color: var(--text-secondary) !important;
+}
+
+body.light-mode .navbar-toggler {
+    border-color: var(--primary-color) !important;
     color: var(--primary-color) !important;
+}
+
+body.light-mode .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%2300d338' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 body {
@@ -339,7 +348,7 @@ a {
 .dark-mode-btn {
   position: fixed;
   bottom: 40px;
-  left: 1815px;
+  right: 20px;
   
   padding: 12px 15px;
   background-color: #1a1a1a;
@@ -389,4 +398,22 @@ body.light-mode nav select {
 body.dark-theme {
   background-color: #121212;
   color: #ffffff;
+}
+
+/* Mobil responsive ayarları */
+@media (max-width: 768px) {
+  .dark-mode-btn {
+    bottom: 20px;
+    left: auto;
+    right: 20px;
+    padding: 10px 12px;
+  }
+  
+  .page-hero h1 {
+    font-size: 2rem;
+  }
+  
+  section {
+    padding: 0 1rem;
+  }
 }
